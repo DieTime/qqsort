@@ -38,6 +38,12 @@ int main(void) {
 
 > ❗This project is just an experiment to study the influence of inlining on code performance.
 
+Machine used for benchmark:
+
+* AMD Ryzen 7 5800x
+* 16GB RAM
+* Linux 6.2.0
+
 For the benchmark, a simple C++ [program](./benchmark/main.cpp) was implemented to sort an array of structures in three ways:
 
 * Sorting using `stl`
@@ -46,9 +52,9 @@ For the benchmark, a simple C++ [program](./benchmark/main.cpp) was implemented 
 
 Three compilers were used to build the benchmark:
 
-* `g++`
-* `clang++`
-* `msvc`
+* `g++ 11.4.0`
+* `clang++ 14.0.0`
+* `msvc 19.37`
 
 The following compilation flags were used:
 
